@@ -31,7 +31,7 @@ const Hero = () => {
               whileInView={{ scale: 1 }}
               transition={{ type: spring, damping: 10, duration: 1, delay: 0.6 }}
               className='bg-[#B85C38] md:mt-16 mt-5 h-10 w-32 rounded-xl cursor-pointer'
-              onClick={()=>navigate('/shop')}>Shop Now</motion.button>
+              onClick={()=>navigate("/shop")}>Shop Now</motion.button>
             </motion.div>
             <div className='md:w-2/4 overflow-hidden mt-[-80px] ml-[-130px] md:mt-0 md:ml-0 h-[400px] md:h-full'>
                 <motion.img src={hero2_img} className='w-full md:h-screen object-contain md:object-cover' 
