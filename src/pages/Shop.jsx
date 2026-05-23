@@ -159,7 +159,7 @@ let total = Math.floor(subtotal + deliveryFee + taxes);
 
             {/* Products */}
 
-            <div className='md:flex flex-wrap justify-center gap-10 border-b-2 border-amber-950 py-10 items-center mt-5'>
+            <div className='flex flex-wrap md:flex-row justify-center items-center gap-10 border-b-2 border-amber-950 py-10 mt-5'>
 
                 {cate.map((item) => (
 

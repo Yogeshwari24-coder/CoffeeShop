@@ -8,8 +8,8 @@ const BestSellerCart = ({id, img, title, des, price}) => {
   const dispatch = useDispatch();
   
   return (  
-    <div className= 'rounded-xl p-8 mt-5 shadow-2xl bg-[#2D2424] text-[#ddc6a7] shadow-black w-[350px] h-[420px]'>
-        <img src={img} className='size-60 ml-5'/>
+    <div className= 'rounded-xl flex flex-col items-center justify-center py-5 mt-5 shadow-xl/30 bg-[#2D2424] text-[#ddc6a7] shadow-black w-[350px] h-[420px]'>
+        <img src={img} className='size-60 ml-5 rounded-2xl'/>
         <h1 className='mt-3 text-xl font-semibold text-[#b66444]'>{title}</h1>
         <p className='text-sm'>{des}</p>
         <div className='mt-2 flex justify-between text-[#b66444]'>
