@@ -8,6 +8,7 @@ import OrderCart from '../components/OrderCart';
 import BestSellerCart from '../components/BestSellerCart';
 import Contact from './Contact';
 import { toast } from 'react-toastify';
+import { coffeeData } from '../data/CoffeeData';
 
 import {
   setInput,
@@ -18,7 +19,6 @@ import {
   decreaseQty,
   removeItem
 } from '../redux/cartSlice';
-import Categories from './Categories';
 
 
 const Shop = () => {
@@ -157,13 +157,14 @@ let total = Math.floor(subtotal + deliveryFee + taxes);
 
             </AnimatePresence>
 
-            {/* Products */}
+            {/* Search Products */}
 
             <div className='flex flex-wrap md:flex-row justify-center items-center gap-10 border-b-2 border-amber-950 py-10 mt-5'>
 
                 {cate.map((item) => (
 
-                    <div key={item.id}>
+                    <div key={item.id}
+                        className='flex justify-center items-center md:flex-row flex-col'>
 
                         <BestSellerCart
                             {...item}
